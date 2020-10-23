@@ -1,0 +1,110 @@
+---
+title: "Reproducibility Assignment 1"
+author: "Jake Hubner"
+date: "20/10/2020"
+output:
+  pdf_document: default
+  html_document: default
+urlcolor: blue
+bibliography: Repro_A1.bib
+csl: council-of-science-editors-author-date.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Part 1: Paper Overview
+
+### Summary:
+
+  This paper is an effort to analyze the effect of relating Chronic Wasting Disease (CWD) infection risk and the degree of habitat connectivity for one of the disease’s possible hosts, mule deer (Odocoileus hemionus)[@nobertLandscapeConnectivityPredicts2016a]. As it stands to reason that a strong connection between habitat areas for mule deer will facilitate movement and disease spread, an attempt is made to confirm if utilizing habitat response variables in predicting CWD spread is more effective than simply using euclidean distance to known cases. Euclidean distance is currently the most used model due to its simplicity, but is not necessarily the most accurate method for prediction. They used radio-telemetry collar tracking data from mule deer in central Canada, land cover satellite data, and the connectivity program Circuitscape to establish this relationship. 
+
+### Major Findings:
+  The study found that while using euclidean distance for CWD transmission models was effective for the study area, adding environmental response variables improved the model further. It is proposed that these variables will have a stronger effect on model accuracy in more heterogeneous environments and on longer time scales. As a byproduct of testing the models, the study also found a number of interesting trends for the disease within the study area. 
+
+
+## Part 2. Journal Integrity
+
+The publisher of this article, Journal of Applied Ecology, is a part of the larger British Ecological Society. While there doesn't seem to be a checklist for study transparency and reproducibility specifically, there are a number of formatting pages that mention it as part of a the policies and guidelines.
+
+Link 1: https://besjournals-onlinelibrary-wiley-com.ezproxy.library.ubc.ca/hub/journal/13652664/about/author-guidelines
+
+Link 2: https://besjournals-onlinelibrary-wiley-com.ezproxy.library.ubc.ca/hub/editorial-policies
+
+In addition, the journal has two separate reporting standards checklists for different types of studies. For synthesis studies, it uses the RepOrting standards for Systematic Evidence Syntheses (ROSES) checklist 
+[Link](https://www.roses-reporting.com/systematic-review-reports)
+
+For experimental studies, they require the reporting checklist from Ecology Letters 
+[@hillebrandReportingStandardsExperimental2013a]to be followed.
+[Link](http://www.wiley-docs.com/Checklist_for_reporting_experimental_details.pdf)
+
+
+This quote seems particularly relevant: 
+"**Data availability statement:** To enable readers to locate archived data from papers, we require that authors list the database and the respective accession numbers or DOIs for all data from the manuscript that has been made publicly available...When a DOI is available for the data, the full data citation should also be given in the reference list."
+  
+<br>
+
+<!-- I tried many things to get this table title to work on pdf without messing anything else up. Had no luck. \center TEXT \center came closest but also had the side side effect of centering my bibliography for no reason. -->
+
+<font size="0.8">**Table 1**  TOP Assessment for the Journal of Applied Ecology (personally assessed)</font>
+
+| Standard                     | Score (0-3)                       |
+|------------------------------|-----------------------------------|
+| Data Citation                | 3                                 |
+| Data Transparency            | 2                                 |
+| Analytical Code Transparency | 2                                 |
+| Materials Transparency       | 2 (requires manufacturer details) |
+| Reporting Guidelines         | 3 (ROSES or Ecology Letters)      |
+| Study Preregistration        | 0                                 |
+| Analysis Preregistration     | 0                                 |
+| Replication                  | 0                                 |
+| Publication Bias             | 0                                 |
+| Open Science Badges          | 0                                 |
+| Total                        | 12                                |
+
+
+
+## Part 3: Assessment
+
+1. **Were all sample sizes fully reported, including exact values for all subsets of data (e.g., each treatment group), and for all statistical analyses?** Yes
+
+
+2. **Are the methods reported in sufficient detail to allow another researcher to gather the same data and run the identical analyses?** Yes, all methods, data, and code can be found in appendices.
+
+
+3. **a. Are statistical results for each test reported in sufficient detail? What qualifies as ‘sufficient detail’ will differ among analyses.**  Yes  
+  **b. Are results from all variables and from all models reported? Complete reporting should include results related to all variables examined in preliminary models and all results from exploratory analyses.**  Yes
+  
+4. **Were observers kept unaware of the experimental treatment imposed on the samples (e.g., organisms, plots) when recording observations or measurements so as to minimize unconscious bias?**  No. However, it’s not particularly feasible for this type of research.
+
+
+5. **Did the authors explain how sample size was decided (e.g., based on a priori power analysis or logistical constraints), or when an experiment with pre-set sample sizes was terminated? If sample size or the end of the experiment was not decided prior to the initiation of the study, was there a decision rule for when to cease data collection?** The study was carried out using existing data. The more data the better the model, so it was intended to use as much as was available at the time. It was stated that only data up to 2013 was used for the study.
+
+
+6. **Did the authors develop their analysis plan, including choices of variables, without looking at the data, for instance prior to gathering data or with a dummy data set? This is most easily determined by the existence of a pre-registered analysis plan. In the absence of pre-registration, a statement from the authors about the development of their analysis plan is still important.**  This was not addressed in the paper.
+
+
+7. **How suitable do you find the research methods without considering the outcome? Evaluate the design and methods regardless of whether or not there was a finding of “statistical significance”, or whether or not the results conform to a predicted pattern.**  The methods seem sound, though I can’t say I know everything about all the analyses done. SSFs and model predictions are required for this type of work. The methods are well laid out, and each step makes logical sense. 
+
+
+8. **Are the sample sizes large enough to justify the authors’ conclusions? If presenting significance tests, how much power would this study have to detect statistically significant weak, moderate, and strong effects? Expectation of effect size can best be derived from average effect sizes presented in meta-analyses of similar topics. The effect size reported in the manuscript under review can be a poor estimate of the underlying effect size, especially if the sample size is small, which elevates sampling uncertainty. Statistical significance is a poor indicator of the reliability of an estimate across a wide range of sample sizes and common effect sizes.** Effect size is not reported in the article.
+
+
+9. **What does the size of the estimated effect (e.g., slope, correlation coefficient, difference in means) suggest about its biological or practical importance, and what does uncertainty around that effect estimate suggest about the estimate’s precision?** Effect size is not reported in the article.
+
+
+10. **How unexpected would you judge these results to be in light of prior empirically derived understanding? Effects that are more surprising in light of robust prior information are those that had a lower prior probability of being correct.** I wouldn’t say the results are surprising, and the researchers state the same in the discussion. The whole study was sound and logical from top to bottom.
+
+
+
+## Resources
+
+The .rmd and .bib files can be accessed at: https://github.com/Shrubner/LivingData.git
+
+
+## Bibliography:
+
+
+
